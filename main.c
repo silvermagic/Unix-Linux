@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     perror(argv[1]);
     return -2;
   }
-  if (-1 == (out_fd = creat(argv[2], 0644)))
+  if (-1 == (out_fd = open(argv[2], O_CREAT|O_WRONLY|O_EXCL)))
   {
     perror(argv[2]);
     close(in_fd);
