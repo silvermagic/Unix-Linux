@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
-project(Practice)
+project(pwd)
 
 file(GLOB SRC "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
-add_executable(Practice ${SRC})
+add_executable(pwd ${SRC})
 
 #dependencies
 #INCLUDE(FindPkgConfig)
