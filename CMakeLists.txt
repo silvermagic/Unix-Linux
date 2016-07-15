@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
-project(Practice)
+project(epoll)
+
+set(CMAKE_C_FLAGS "-g -O0")
 
 file(GLOB SRC "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
-add_executable(Practice ${SRC})
+add_executable(epoll ${SRC})
 
 #dependencies
 #INCLUDE(FindPkgConfig)
